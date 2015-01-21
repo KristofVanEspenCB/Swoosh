@@ -1,0 +1,416 @@
+body
+{
+	font-family: Helvetica Neue;
+}
+#iphone
+{
+	width: 312px;
+	background-image: url('../images/iphone.svg');
+	background-repeat: no-repeat;
+	height: 650px;
+	position: absolute;
+	left:50%;
+	margin-left: -156px;
+	top:50%;
+	margin-top:-325px;
+	background-size: cover;
+}
+#container
+{
+	width: 261px;
+	height: 410px;
+	position: relative;
+	opacity: 1;
+	left: 26px;
+	top: 112px;
+	overflow: scroll;
+}
+
+#footer
+{
+    width: 262px;
+    height: 40px;
+    position: relative;
+    opacity: 1;
+    left: 25px;
+    top: 112px;
+    background-color: #59cd4c;
+    overflow: scroll;
+}
+
+#container::-webkit-scrollbar 
+{
+    width: 0px;
+}
+
+img
+{
+	width: 50px;
+}
+
+
+
+#navBack a, #footerProfile a ,#navBackHome a,
+#navTitle, #footerBoost,
+#navSetting a, #footerAction a
+{
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+
+#navTitle,#footerBoost,
+#navSetting a, #footerAction a
+{
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#navBackHome a,#footerProfile a
+{
+    margin-left: 9px;
+    height: 20px;
+    width: 20px;
+    text-indent: -9999px;
+    display: block;
+}
+#navBack a
+{
+	margin-left: 9px;
+	height: 20px;
+	width: 20px;
+	background-image: url('../images/back.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	display: block;
+}
+
+#navTitle,#footerBoost
+{
+	width: 202px;
+}
+
+#navTitle h1, #footerBoost a
+{
+	line-height: 20px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	color: #fff;
+}
+
+#footerBoost a
+{
+    width: 100%;
+    display: block;
+    text-decoration:none;
+}
+#navSetting a, #footerAction a
+{
+	margin-right: 9px;
+	height: 20px;
+	width: 20px;
+	text-indent: -9999px;
+}
+
+#navSetting a
+{
+    background-image: url('../images/settings.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footerProfile a
+{
+    background-image: url('../images/profile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footerAction a
+{
+    background-image: url('../images/actionlist.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+li.bankcardList
+{
+	height: 40px;
+	width: 242.5px;
+	margin: 0 auto;
+	background-color: white;
+	border-bottom:1px solid #D5D6D8;
+	text-align: left;
+	padding-top:10px;
+}
+
+#notificationIcon
+{
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-image: url('../images/notification.png');
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 40px;
+	cursor: pointer;
+}
+
+
+#upperNav
+{
+	height: 35px;
+	background-color: #59cd4c;
+	width: 260px;
+	z-index: 10;
+	position: relative;
+}
+
+#networthSection
+{
+    height: 35px;
+    background-color: #fafafa;
+    width: 260px;
+    z-index: 10;
+    position: relative;
+}
+
+#networthSection h1
+{
+    padding-left:20px;
+    padding-top: 10px;
+    color:#969696;
+}
+
+#networthSection h1 span
+{
+    color:#59cd4c;
+}
+
+#optionList
+{
+    margin-left:20px;
+    margin-top: 10px;
+}
+
+.tableImg
+{
+    width: 50px;
+}
+.tableText
+{
+    height:30px;
+    width: 180px;
+    border-bottom:2px solid #969696;
+}
+
+.tableTextTitle
+{
+    display: inline-block;
+    width: 160px;
+    color: #969696;
+
+}
+
+.tableTextNext
+{
+    display: inline-block;
+}
+
+.arrow
+{
+    width:10px;
+}
+
+.optionIcon
+{
+    width: 30px;
+}
+
+.tableText select
+{
+    height: 34px;
+    width: 180px;
+}
+
+.button
+{
+    margin-top: 30px;
+    border-radius: 4px;
+    width: 240px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+    background-color:#969696;
+    border: #969696;
+    color:white;
+}
+
+/* butoon */
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display:none;
+    margin-top: 20px;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #59cd4c;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}
+
+/* results */
+#resultsList
+{
+    margin-left:20px;
+    margin-top: 10px;
+}
+
+#resultsList tr
+{
+    border-bottom: 1px solid #969696;
+}
+
+#resultsList td
+{
+    padding-bottom: 10px;
+
+}
+
+#resultsList .tablePrice
+{
+    width: 70px;
+}
+
+#resultsList .tableCompany
+{
+    width: 140px;
+    padding-right: 10px;
+}
+
+#resultsList .tablePrice h1
+{
+    color: #59cd4c;
+}
+
+#resultsList .tableCompany h1, #resultsList .tableCompany h2
+{
+    font-size:16px;
+     color: #969696;
+ }
+
+#resultsList .tableCompany h2
+{
+    font-size:12px;
+}
+
+/* index logo  */
+#indexLogo
+{
+    margin-left: auto;
+    margin-right:auto;
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#notificationIcon
+{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url('../images/notification.png');
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.indexValues
+{
+    text-align: center;
+    color: #969696;
+}
+
+.indexValues span
+{
+    color: #59cd4c;
+}
+
+#priceTable
+{
+    width: 230px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+}
+
+#priceTable td
+{
+    padding: 5px;
+    border: 2px solid #59cd4c;
+    text-align: center;
+}
+
+#priceTable .swoosh
+ {
+     padding: 5px;
+     border: 2px solid #white;
+     background-color: #59cd4c;
+     color:white;
+ }
+
+#priceTable .actual
+{
+    padding: 5px;
+
+    color:#969696;
+}
+
+#buttonText
+{
+    float: left;
+    width: 135px;
+    text-align: right;
+    display:inline-block;float:left;
+}
